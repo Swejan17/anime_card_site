@@ -17,7 +17,7 @@ interface Prop {
   index: number;
 }
 
-const varients={
+const varients = {
   hidden:{opacity:0},
   visible:{opacity:1}
 
@@ -26,7 +26,7 @@ function AnimeCard({ anime,index }: Prop) {
   console.log(anime.image.original)
   return (
     <MotionDiv 
-    varients={varients}
+    variants={varients}
     initial="hidden"
     animate="visible"
     transition={{
